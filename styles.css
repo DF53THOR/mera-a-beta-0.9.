@@ -167,7 +167,7 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Görsel Üretme Modalı - TELEFON İÇİN OPTİMİZE */
+/* Görsel Üretme Modalı - TELEFON İÇİN DÜZELTİLDİ */
 .image-modal {
     display: none;
     position: fixed;
@@ -183,7 +183,7 @@ body {
 
 .image-modal-content {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    margin: 2% auto;
+    margin: 20px auto;
     padding: 20px;
     border-radius: 15px;
     width: 95%;
@@ -193,6 +193,7 @@ body {
     color: white;
     text-align: center;
     position: relative;
+    min-height: auto;
 }
 
 .image-modal-header {
@@ -268,6 +269,7 @@ body {
     transition: all 0.3s;
     width: 100%;
     font-size: 14px;
+    margin-top: 10px;
 }
 
 .image-modal-close:hover {
@@ -282,7 +284,7 @@ body {
     padding: 20px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    margin-top: 15px;
+    margin: 15px 0;
 }
 
 .loading-spinner {
@@ -319,7 +321,7 @@ body {
 }
 
 .image-result {
-    margin-top: 15px;
+    margin: 15px 0;
     display: none;
 }
 
@@ -1067,9 +1069,13 @@ header {
         max-height: 70vh;
     }
 
-    /* Mobile Görsel Üretme - OPTİMİZE EDİLDİ */
+    /* Mobile Görsel Üretme - TAMAMEN DÜZELTİLDİ */
+    .image-modal {
+        padding: 10px;
+    }
+
     .image-modal-content {
-        margin: 5% auto;
+        margin: 10px auto;
         padding: 15px;
         width: 95%;
         max-height: 90vh;
@@ -1079,6 +1085,7 @@ header {
     .image-gallery-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 8px;
+        margin-bottom: 15px;
     }
 
     .image-gallery-item {
@@ -1106,6 +1113,11 @@ header {
 
     .generated-image {
         max-height: 250px;
+    }
+
+    .image-modal-close {
+        position: static;
+        margin-top: 15px;
     }
 }
 
@@ -1197,6 +1209,11 @@ header {
     .image-gallery-item {
         min-height: 70px;
         padding: 10px;
+    }
+
+    .image-modal-content {
+        margin: 5px auto;
+        padding: 12px;
     }
 }
 
